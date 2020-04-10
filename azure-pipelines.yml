@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'c3fe7982-3a25-4dad-ac0f-6fba4b810a4d'
   imageRepository: 'goprasadtestapp'
   containerRegistry: 'prgorle.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'prgorle106056b2-auth'
 
