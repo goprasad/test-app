@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: goprasadtestapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: goprasadtestapp 
+    spec:
+      containers:
+        - name: goprasadtestapp 
+          image: prgorle.azurecr.io/goprasadtestapp
+          ports:
+          - containerPort: 80
